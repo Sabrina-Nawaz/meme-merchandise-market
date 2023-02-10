@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Navbar, Nav, Container, Modal, Tab } from "react-bootstrap";
-import SignUpForm from "./SignupForm";
-import LoginForm from "./LoginForm";
+import { FaCartArrowDown } from "react-icons/fa";
 import "../style/Header.css";
 
 import Auth from "../utils/auth";
@@ -21,7 +20,9 @@ const Header = () => {
             <img class="navbar-img" src="img\shiba-inu-icon.png"></img>
           </div>
           <button class="navbar-login-btn">Login</button>
-          <button class="navbar-cart-btn"></button>
+          <button class="navbar-cart-btn">
+            <FaCartArrowDown size="25px" color="white" />
+          </button>
         </nav>
       </body>
 
