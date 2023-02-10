@@ -1,8 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SearchBooks from "./pages/SearchBooks";
+import Home from "./pages/Home";
 import SavedBooks from "./pages/SavedBooks";
-import Header from "./components/Header.jsx";
+import Header from "./components/Header";
 
 function App() {
   return (

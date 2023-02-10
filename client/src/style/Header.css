@@ -1,6 +1,14 @@
+header {
+  background-image: url(../img/banner.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Navbar Section */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 60px;
   background-color: white;
@@ -12,8 +20,8 @@
   font-weight: bold;
   color: goldenrod;
   text-align: center;
-  flex-grow: 1;
-  margin: 0 20px;
+  width: 20%;
+  margin: 0 10px;
 }
 
 .navbar-img-container {
@@ -25,13 +33,15 @@
 }
 
 .navbar-img {
-  width: 20px;
-  height: 20px;
-  background-color: goldenrod;
+  width: 40px;
+  height: 40px;
+  opacity: 0.6;
   border-radius: 50%;
 }
 
 .navbar-login-btn {
+  position: absolute;
+  right: 6%;
   background-color: goldenrod;
   color: white;
   border: none;
@@ -39,4 +49,89 @@
   padding: 10px 20px;
   font-size: 18px;
   cursor: pointer;
+}
+
+.navbar-cart-btn {
+  position: absolute;
+  right: 1%;
+  background-color: goldenrod;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  background-image: url(../img/cart-icon.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 4.5em;
+  height: 2.5em;
+}
+
+/* Catergory Bar Section */
+.categorybar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: white;
+  padding: 0 20px;
+}
+
+.categorybar-middle {
+  display: flex;
+  position: fixed;
+  left: 0%;
+}
+
+.categorybar-btn {
+  font-size: 18px;
+  color: goldenrod;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.categorybar-btn:hover {
+  color: darkred;
+  transition: 0.2s;
+}
+
+/* Search Bar */
+form {
+  display: flex;
+  align-items: center;
+}
+
+.categorybar-search-container {
+  display: flex;
+  /* align-items: center; */
+  margin: 0 20px;
+}
+
+.categorybar-search-input {
+  height: 30px;
+  padding: 0 10px;
+  font-size: 18px;
+  border-radius: 15px;
+  border: 1px solid goldenrod;
+  margin-right: 10px;
+}
+
+.categorybar-search-btn {
+  height: 30px;
+  width: 30px;
+  background-color: goldenrod;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.categorybar-search-btn i {
+  font-size: 18px;
 }
