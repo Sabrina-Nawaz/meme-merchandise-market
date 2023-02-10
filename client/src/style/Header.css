@@ -24,6 +24,11 @@ header {
   margin: 0 10px;
 }
 
+.navbar-title:hover {
+  text-decoration: none;
+  color: goldenrod;
+}
+
 .navbar-img-container {
   width: 30px;
   height: 30px;
