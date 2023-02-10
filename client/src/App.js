@@ -5,6 +5,8 @@ import Footer from './components/Footer';
 import Shipping from './pages/shipping';
 import Refund from './pages/Refund';
 import Privacy from './pages/privacy';
+import Home from './pages/Home';
+import Shirts from './pages/Shirts';
 import Header from './components/Header';
 
 
@@ -14,10 +16,6 @@ function App() {
       <>
         <Header />
         <Routes>
-          <Route 
-            path='/' 
-            element={<SearchBooks />} 
-          />
           <Route 
             path='/shipping' 
             element={<Shipping />} 
@@ -30,6 +28,8 @@ function App() {
             path='/privacy' 
             element={<Privacy />} 
           />
+          <Route path="/" element={<Home />} />
+          <Route path="/Shirts" element={<Shirts />} />
 
           <Route 
             path='*'
@@ -40,7 +40,6 @@ function App() {
         <Footer />
       </>
     </Router>
-    
   );
 }
 
