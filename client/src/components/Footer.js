@@ -17,14 +17,13 @@ const styles = {
 function Footer() {
     return (
       <>
-      <Navbar fixed="bottom" expand='lg' style={styles.fontcolor}>
+      <Navbar sticky="bottom" fixed="bottom" expand='lg' style={styles.fontcolor}>
         <Container>
           {/* <Navbar.Brand href="#home">Navbar</Navbar.Brand> */}
           <Nav className="me-auto">
             <Nav.Link as={Link} to='/shipping'>Shipping and Delivery</Nav.Link>
-            <Nav.Link as={Link} to='/'>Refund Policy</Nav.Link>
-            <Nav.Link as={Link} to='/'>Privacy Policy</Nav.Link>
-            <Nav.Link as={Link} to='/'>FAQ</Nav.Link>
+            <Nav.Link as={Link} to='/refund'>Refund Policy</Nav.Link>
+            <Nav.Link as={Link} to='/privacy'>Privacy Policy</Nav.Link>
             <Nav.Link as={Link} to='/'>About Us</Nav.Link>
             <Nav.Link as={Link} to='/'>Contact Us</Nav.Link>
             
