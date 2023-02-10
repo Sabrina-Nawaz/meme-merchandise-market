@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import SearchBooks from './pages/SearchBooks';
 import Footer from './components/Footer';
 import Shipping from './pages/shipping';
 import Refund from './pages/Refund';
