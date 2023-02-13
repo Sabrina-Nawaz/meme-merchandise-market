@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div class="catalog">
       <div class="catalog-item">
-        <img src="img\shirts\shirt-1.jpg" alt="Shiba Inu Hoodie" />
+        <img src="img\other\Shiba-merch-1.jpg" alt="Shiba Inu Hoodie" />
         <h3>Shiba Inu T-Shirt 1</h3>
         <p>$34.99</p>
       </div>
