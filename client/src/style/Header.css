@@ -47,6 +47,7 @@ header {
 .navbar-login-btn {
   position: absolute;
   right: 6%;
+  top: 10%;
   background-color: goldenrod;
   color: white;
   border: none;
@@ -60,6 +61,7 @@ header {
 .navbar-cart-btn {
   position: absolute;
   right: 1%;
+  top: 10%;
   background-color: goldenrod;
   color: white;
   border: none;

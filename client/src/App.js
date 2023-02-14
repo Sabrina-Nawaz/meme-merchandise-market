@@ -1,14 +1,19 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Footer from './components/Footer';
-import Shipping from './pages/shipping';
-import Refund from './pages/Refund';
-import Privacy from './pages/privacy';
-import Home from './pages/Home';
-import Shirts from './pages/Shirts';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+//Import Components
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+//Import Pages
+import Home from "./pages/Home";
+import Shipping from "./pages/shipping";
+import Refund from "./pages/Refund";
+import Privacy from "./pages/privacy";
+import Shirts from "./pages/Shirts";
+import Sweatshirts from "./pages/Sweatshirts";
+import Hats from "./pages/Hats";
+import Others from "./pages/Others";
+import ShoppingCart from "./pages/Shopping-cart";
 import Contact from './pages/contact';
-import Header from './components/Header';
-
 
 function App() {
   return (
@@ -33,13 +38,15 @@ function App() {
             element={<Contact />} 
           />
           <Route path="/" element={<Home />} />
+          <Route path="/shipping" element={<Shipping />} />
+          <Route path="/refund" element={<Refund />} />
+          <Route path="/privacy" element={<Privacy />} />
           <Route path="/Shirts" element={<Shirts />} />
-
-          <Route 
-            path='*'
-            element={<h1 className='display-2'>Wrong page!</h1>}
-          />
-          
+          <Route path="/Sweatshirts" element={<Sweatshirts />} />
+          <Route path="/Hats" element={<Hats />} />
+          <Route path="/Others" element={<Others />} />
+          <Route path="/ShoppingCart" element={<ShoppingCart />} />
+          <Route path="*" element={<h1 className="display-2">Wrong page!</h1>} />
         </Routes>
         <Footer />
       </>
