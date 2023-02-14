@@ -1,5 +1,6 @@
 import React from "react";
 import "../style/Shopping-cart.css";
+import "../script/Shopping-cart.js";
 
 const ShoppingCart = () => {
   return (
