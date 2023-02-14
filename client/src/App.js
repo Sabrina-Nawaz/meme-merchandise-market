@@ -6,6 +6,7 @@ import Refund from './pages/Refund';
 import Privacy from './pages/privacy';
 import Home from './pages/Home';
 import Shirts from './pages/Shirts';
+import Contact from './pages/contact';
 import Header from './components/Header';
 
 
@@ -26,6 +27,10 @@ function App() {
           <Route 
             path='/privacy' 
             element={<Privacy />} 
+          />
+                    <Route 
+            path='/contact' 
+            element={<Contact />} 
           />
           <Route path="/" element={<Home />} />
           <Route path="/Shirts" element={<Shirts />} />

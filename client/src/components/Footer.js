@@ -25,17 +25,17 @@ function Footer() {
             <Nav.Link as={Link} to='/refund'>Refund Policy</Nav.Link>
             <Nav.Link as={Link} to='/privacy'>Privacy Policy</Nav.Link>
             <Nav.Link as={Link} to='/'>About Us</Nav.Link>
-            <Nav.Link as={Link} to='/'>Contact Us</Nav.Link>
+            <Nav.Link as={Link} to='/contact'>Contact Us</Nav.Link>
             
           </Nav>
           
           <Nav>
           <Navbar.Brand>Follow Us:</Navbar.Brand>
-          <Nav.Link href="#pricing"><FaGithub size="15px" color="white"/></Nav.Link>
-          <Nav.Link href="#pricing"><FaLinkedinIn size="15px" color="white"/></Nav.Link>
-          <Nav.Link href="#pricing"><FaTwitterSquare size="15px" color="white"/></Nav.Link>
-          <Nav.Link href="#pricing"><FaFacebook size="15px" color="white"/></Nav.Link>
-          <Nav.Link href="#pricing"><FaInstagram size="15px" color="white"/></Nav.Link>
+          <Nav.Link href="https://github.com/" target="_blank"><FaGithub size="15px" color="white"/></Nav.Link>
+          <Nav.Link href="https://www.linkedin.com/home" target="_blank"><FaLinkedinIn size="15px" color="white"/></Nav.Link>
+          <Nav.Link href="https://twitter.com/" target="_blank"><FaTwitterSquare size="15px" color="white"/></Nav.Link>
+          <Nav.Link href="https://www.facebook.com/" target="_blank"><FaFacebook size="15px" color="white"/></Nav.Link>
+          <Nav.Link href="https://www.instagram.com/" target="_blank"><FaInstagram size="15px" color="white"/></Nav.Link>
           </Nav>
         </Container>
       </Navbar>
