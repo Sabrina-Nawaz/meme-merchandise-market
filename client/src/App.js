@@ -10,9 +10,9 @@ import Refund from "./pages/Refund";
 import Privacy from "./pages/privacy";
 import Shirts from "./pages/Shirts";
 import Sweatshirts from "./pages/Sweatshirts";
-import Hoodies from "./pages/Hoodies";
 import Hats from "./pages/Hats";
 import Others from "./pages/Others";
+import ShoppingCart from "./pages/Shopping-cart";
 
 function App() {
   return (
@@ -25,10 +25,10 @@ function App() {
           <Route path="/refund" element={<Refund />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/Shirts" element={<Shirts />} />
-          <Route path="/Others" element={<Others />} />
           <Route path="/Sweatshirts" element={<Sweatshirts />} />
-          <Route path="/Hoodies" element={<Hoodies />} />
           <Route path="/Hats" element={<Hats />} />
+          <Route path="/Others" element={<Others />} />
+          <Route path="/ShoppingCart" element={<ShoppingCart />} />
           <Route path="*" element={<h1 className="display-2">Wrong page!</h1>} />
         </Routes>
         <Footer />

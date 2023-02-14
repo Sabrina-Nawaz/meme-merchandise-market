@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { Navbar, Nav, Container, Modal, Tab } from "react-bootstrap";
+import React from "react";
+// import { Link } from "react-router-dom";
+// import { Navbar, Nav, Container, Modal, Tab } from "react-bootstrap";
 import { FaCartArrowDown } from "react-icons/fa";
 import "../style/Header.css";
 
-import Auth from "../utils/auth";
+// import Auth from "../utils/auth";
 
 const Header = () => {
   return (
@@ -13,18 +13,22 @@ const Header = () => {
       <body>
         <nav class="navbar">
           <div class="navbar-img-container navbar-img-container-left">
-            <img class="navbar-img" src="img\shiba-inu-icon.png"></img>
+            <img class="navbar-img" src="img\shiba-inu-icon.png" alt="Icon of a Shiba Inu" />
           </div>
           <a class="navbar-title" href="/">
             Shiba Inu Meme Merchandise Store
           </a>
           <div class="navbar-img-container navbar-img-container-right">
-            <img class="navbar-img" src="img\shiba-inu-icon.png"></img>
+            <img class="navbar-img" src="img\shiba-inu-icon.png" alt="Banner of a cute Shiba Inu" />
           </div>
-          <button class="navbar-login-btn">Login</button>
-          <button class="navbar-cart-btn">
-            <FaCartArrowDown size="25px" color="white" />
-          </button>
+          <a href="/login">
+            <button class="navbar-login-btn">Login</button>
+          </a>
+          <a href="/ShoppingCart">
+            <button class="navbar-cart-btn">
+              <FaCartArrowDown size="25px" color="white" />
+            </button>
+          </a>
         </nav>
       </body>
 
@@ -34,9 +38,9 @@ const Header = () => {
           <a class="categorybar-btn" href="/Shirts">
             Shirts
           </a>
-          <a class="categorybar-btn" href="/Hoodies">
+          {/* <a class="categorybar-btn" href="/Hoodies">
             Hoodies
-          </a>
+          </a> */}
           <a class="categorybar-btn" href="/Sweatshirts">
             Sweatshirts
           </a>
