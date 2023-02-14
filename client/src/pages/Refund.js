@@ -26,7 +26,7 @@ export default function Refund() {
     
         <Navbar.Brand as={Link} to='/' >Home</Navbar.Brand>
         <Navbar.Brand > {'>'} </Navbar.Brand>
-        <Navbar.Brand as={Link} to='/shipping'>Refund Policy</Navbar.Brand>
+        <Navbar.Brand as={Link} to='/refund'>Refund Policy</Navbar.Brand>
         
      
     </Navbar>

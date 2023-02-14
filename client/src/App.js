@@ -13,6 +13,7 @@ import Sweatshirts from "./pages/Sweatshirts";
 import Hats from "./pages/Hats";
 import Others from "./pages/Others";
 import ShoppingCart from "./pages/Shopping-cart";
+import Contact from './pages/contact';
 
 function App() {
   return (
@@ -20,6 +21,22 @@ function App() {
       <>
         <Header />
         <Routes>
+          <Route 
+            path='/shipping' 
+            element={<Shipping />} 
+          />
+          <Route 
+            path='/refund' 
+            element={<Refund />} 
+          />
+          <Route 
+            path='/privacy' 
+            element={<Privacy />} 
+          />
+                    <Route 
+            path='/contact' 
+            element={<Contact />} 
+          />
           <Route path="/" element={<Home />} />
           <Route path="/shipping" element={<Shipping />} />
           <Route path="/refund" element={<Refund />} />
