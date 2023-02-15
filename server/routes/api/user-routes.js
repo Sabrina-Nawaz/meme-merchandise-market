@@ -3,8 +3,9 @@ const router = require("express").Router();
 const {
   getOneUser,
   createUser,
-  updateUser,
-  addProduct,
+  // updateUser,
+  savedProducts, // is this same as addProduct? or is it total savedProducts?
+  // addProduct, //not needed?
   deleteProduct,
 } = require("../../controllers/user-controller");
 
@@ -19,8 +20,16 @@ router.route("/").post(createUser).put(authMiddleware, savedProducts);
 
 router.route("/login").post(login);
 
-router.route("/me").get(authMiddleware, getSingleUser);
+// get one user  /api/user/:userId
+router.route("/me").get(authMiddleware, getOneUser); // route `me`?
+// .put(updateUser) --> if want this feature
 
-router.route("/books/:bookId").delete(authMiddleware, deleteBook);
+router.route("/products/:productId").delete(authMiddleware, deleteProduct);
+
+// DO WE NEED THESE ROUTES BELOW? HOW TO IMPLEMENT
+// // api/users/:userId/savedProducts/:productId
+// router.route("/:userId/savedProducts/:productId")
+//     .post(authMiddleware, addProduct)
+//     .delete(authMiddleware, deleteProduct)
 
 module.exports = router;
