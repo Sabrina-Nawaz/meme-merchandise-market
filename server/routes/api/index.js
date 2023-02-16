@@ -8,6 +8,6 @@ const categoryRoutes = require("./category-routes");
 
 //router.use("/users", userRoutes);
 router.use("/products", productRoutes); // need?
-// router.use("/categories", categoryRoutes);
+router.use("/categories", categoryRoutes);
 
 module.exports = router;
