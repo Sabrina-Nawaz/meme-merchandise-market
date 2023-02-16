@@ -13,11 +13,11 @@ const productController = {
   },
   // To GET ONE product by id
   getOneProduct(req, res) {
-    Product.findOne({ _id: req.params.productId })
+    Product.findOne({ _id: req.params.productId})
       .then((product) =>
         !product
           ? res.status(404).json({ message: "No product with that ID" })
-          : res.json(thought)
+          : res.json(product)
       )
       .catch((err) => res.status(500).json(err));
   },
