@@ -13,7 +13,10 @@ const {
 const { authMiddleware } = require("../../utils/auth");
 
 // Route to GET and POST all users /api/users
-router.route("/").get(getUsers).post(createUser);
+router
+  .route("/")
+  // .get(getUsers)
+  .post(createUser);
 
 // put authMiddleware anywhere we need to send a token for verification of user
 router.route("/").post(createUser).put(authMiddleware, savedProducts);
