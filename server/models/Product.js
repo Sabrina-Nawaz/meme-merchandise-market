@@ -1,7 +1,7 @@
-const { Schema } = require('mongoose');
-const categorySchema = require('./Category');
+const { Schema } = require("mongoose");
+const categorySchema = require("./Category");
 
-// This is a subdocument schema, it won't become its own model but we'll use it as the schema for the User's `savedBooks` array in User.js
+// This is a subdocument schema, it won't become its own model but we'll use it as the schema for the User's `savedBooks/ savedProducts` array in User.js
 const productSchema = new Schema({
   productName: [
     {
@@ -12,7 +12,7 @@ const productSchema = new Schema({
     type: String,
     required: true,
   },
-  // saved book id from GoogleBooks
+  // saved book/product id from GoogleBooks / meme-db
   productId: {
     type: String,
     required: true,
