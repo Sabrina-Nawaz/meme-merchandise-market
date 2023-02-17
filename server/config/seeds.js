@@ -22,7 +22,7 @@ db.once("open", async () => {
       description: "Shiba Inu Eating Udon",
       image: "shirt1.jpg",
       price: 34.99,
-      category: categories[0]._id,
+      category: categories[0].categoryName,
       //   quantity: 500,
     },
     {
@@ -30,7 +30,7 @@ db.once("open", async () => {
       description: "Shiba Inu Training",
       image: "shirt2.jpg",
       price: 19.99,
-      category: categories[0]._id,
+      category: categories[0].categoryName,
       //   quantity: 500,
     },
     {
@@ -38,7 +38,7 @@ db.once("open", async () => {
       description: "Shiba Silhouette",
       image: "shirt3.jpg",
       price: 14.99,
-      category: categories[0]._id,
+      category: categories[0].categoryName,
       //   quantity: 20,
     },
     {
@@ -47,7 +47,7 @@ db.once("open", async () => {
       image: "shirt4.jpg",
       price: 12.99,
       //   quantity: 50,
-      category: categories[0]._id,
+      category: categories[0].categoryName,
     },
     {
       productName: "Shiba Inu T-shirt 5",
@@ -55,7 +55,7 @@ db.once("open", async () => {
       image: "shirt5.jpg",
       price: 7.99,
       //   quantity: 100,
-      category: categories[0]._id,
+      category: categories[0].categoryName,
     },
     {
       productName: "Shiba Inu T-shirt 6",
@@ -63,7 +63,7 @@ db.once("open", async () => {
       image: "shirt6.jpg",
       price: 7.99,
       //   quantity: 30,
-      category: categories[0]._id,
+      category: categories[0].categoryName,
     },
 
     //Category 1: Sweatshirts
@@ -73,7 +73,7 @@ db.once("open", async () => {
       image: "sweatshirt1.jpg",
       price: 34.99,
       //   quantity: 30,
-      category: categories[1]._id,
+      category: categories[1].categoryName,
     },
     {
       productName: "Shiba Inu Sweatshirt 2",
@@ -81,7 +81,7 @@ db.once("open", async () => {
       image: "sweatshirt2.jpg",
       price: 19.99,
       //   quantity: 30,
-      category: categories[1]._id,
+      category: categories[1].categoryName,
     },
     {
       productName: "Shiba Inu Sweatshirt 3",
@@ -89,7 +89,7 @@ db.once("open", async () => {
       image: "sweatshirt3.jpg",
       price: 14.99,
       //   quantity: 30,
-      category: categories[1]._id,
+      category: categories[1].categoryName,
     },
     {
       productName: "Shiba Inu Sweatshirt 4",
@@ -97,7 +97,7 @@ db.once("open", async () => {
       image: "sweatshirt4.jpg",
       price: 12.99,
       //   quantity: 30,
-      category: categories[1]._id,
+      category: categories[1].categoryName,
     },
     {
       productName: "Shiba Inu Sweatshirt 5",
@@ -105,7 +105,7 @@ db.once("open", async () => {
       image: "sweatshirt5.jpg",
       price: 7.99,
       //   quantity: 30,
-      category: categories[1]._id,
+      category: categories[1].categoryName,
     },
     {
       productName: "Shiba Inu Sweatshirt 6",
@@ -113,7 +113,7 @@ db.once("open", async () => {
       image: "sweatshirt6.jpg",
       price: 7.99,
       //   quantity: 30,
-      category: categories[1]._id,
+      category: categories[1].categoryName,
     },
 
     //Category 2
@@ -123,7 +123,7 @@ db.once("open", async () => {
       image: "hat1.jpg",
       price: 34.99,
       //   quantity: 30,
-      category: categories[2]._id,
+      category: categories[2].categoryName,
     },
     {
       productName: "Shiba Inu Hat 2",
@@ -131,7 +131,7 @@ db.once("open", async () => {
       image: "hat2.jpg",
       price: 19.99,
       //   quantity: 30,
-      category: categories[2]._id,
+      category: categories[2].categoryName,
     },
 
     {
@@ -140,7 +140,7 @@ db.once("open", async () => {
       image: "hat3.jpg",
       price: 14.99,
       //   quantity: 30,
-      category: categories[2]._id,
+      category: categories[2].categoryName,
     },
     {
       productName: "Shiba Inu Hat 4",
@@ -148,7 +148,7 @@ db.once("open", async () => {
       image: "hat4.jpg",
       price: 12.99,
       //   quantity: 30,
-      category: categories[2]._id,
+      category: categories[2].categoryName,
     },
     {
       productName: "Shiba Inu Hat 5",
@@ -156,7 +156,7 @@ db.once("open", async () => {
       image: "hat5.jpg",
       price: 7.99,
       //   quantity: 30,
-      category: categories[2]._id,
+      category: categories[2].categoryName,
     },
     {
       productName: "Shiba Inu Hat 6",
@@ -164,7 +164,7 @@ db.once("open", async () => {
       image: "hat6.jpg",
       price: 7.99,
       //   quantity: 30,
-      category: categories[2]._id,
+      category: categories[2].categoryName,
     },
 
     //Category 3: Others
@@ -174,7 +174,7 @@ db.once("open", async () => {
       image: "mug.jpg",
       price: 34.99,
       //   quantity: 30,
-      category: categories[2]._id,
+      category: categories[2].categoryName,
     },
     {
       productName: "Shiba Inu T-shirt 2 / Key-ring",
@@ -182,7 +182,7 @@ db.once("open", async () => {
       image: "keyring.jpg",
       price: 19.99,
       //   quantity: 30,
-      category: categories[2]._id,
+      category: categories[2].categoryName,
     },
     {
       productName: "Shiba Inu T-Shirt 4 / Slippers",
@@ -190,7 +190,7 @@ db.once("open", async () => {
       image: "slippers.jpg",
       price: 12.99,
       //   quantity: 30,
-      category: categories[3]._id,
+      category: categories[3].categoryName,
     },
     {
       productName: "Shiba Inu Plush3E",
@@ -198,7 +198,7 @@ db.once("open", async () => {
       image: "plush.jpg",
       price: 14.99,
       //   quantity: 30,
-      category: categories[3]._id,
+      category: categories[3].categoryName,
     },
     {
       productName: "Shiba Inu T-shirt 5 / Case",
@@ -206,7 +206,7 @@ db.once("open", async () => {
       image: "case.jpg",
       price: 7.99,
       //   quantity: 30,
-      category: categories[3]._id,
+      category: categories[3].categoryName,
     },
 
     {
@@ -215,7 +215,7 @@ db.once("open", async () => {
       image: "airpodcase.jpg",
       price: 3.99,
       //   quantity: 30,
-      category: categories[3]._id,
+      category: categories[3].categoryName,
     },
   ]);
 
