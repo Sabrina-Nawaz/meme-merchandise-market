@@ -29,8 +29,8 @@ const Header = () => {
           </div>
           {Auth.loggedIn()? ( 
             <>
-            <a href="/logout">
-            <button class="navbar-login-btn">Logout</button>
+            <a href="/">
+            <button class="navbar-login-btn" onClick={Auth.logout}>Logout</button>
             </a>        
           <a href="/ShoppingCart">
             <button class="navbar-cart-btn">
