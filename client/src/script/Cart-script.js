@@ -1,5 +1,3 @@
-
-
 // Initialize an empty cart
 let cart = [];
 

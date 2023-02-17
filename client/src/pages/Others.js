@@ -5,34 +5,40 @@ const Home = () => {
   return (
     <div class="catalog">
       <div class="catalog-item">
-        <img src="img\other\Shiba-merch-1.jpg" width="450" height="550" alt="Shiba Inu Hoodie" />
-        <h3>Shiba Inu T-Shirt 1</h3>
-        <p>$34.99</p>
-      </div>
-      <div class="catalog-item">
-        <img src="img\other\Shiba-merch-2.jpg" width="450" height="550" alt="Shiba Inu T-Shirt" />
-        <h3>Shiba Inu T-Shirt 2</h3>
-        <p>$19.99</p>
-      </div>
-      <div class="catalog-item">
-        <img src="img\other\Shiba-merch-3.jpg" width="450" height="550" alt="Shiba Inu Phone Case" />
-        <h3>Shiba Inu T-Shirt 3e</h3>
+        <img src="img\other\Shiba-merch-1.jpg" width="450" height="550" alt="Shiba Inu Mug" />
+        <h3>Shiba Inu Mug</h3>
         <p>$14.99</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
       </div>
       <div class="catalog-item">
-        <img src="img\other\Shiba-merch-4.jpg" width="450" height="550" alt="Shiba Inu Mug" />
-        <h3>Shiba Inu T-Shirt 4</h3>
+        <img src="img\other\Shiba-merch-2.jpg" width="450" height="550" alt="Shiba Inu Key Chain" />
+        <h3>Shiba Inu Key Chain</h3>
+        <p>$9.99</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <div class="catalog-item">
+        <img src="img\other\Shiba-merch-3.jpg" width="450" height="550" alt="Shiba Inu Toy" />
+        <h3>Shiba Inu Toy</h3>
+        <p>$14.99</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <div class="catalog-item">
+        <img src="img\other\Shiba-merch-4.jpg" width="450" height="550" alt="Shiba Inu Slippers" />
+        <h3>Shiba Inu Slippers</h3>
         <p>$12.99</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
       </div>
       <div class="catalog-item">
-        <img src="img\other\Shiba-merch-5.jpg" width="450" height="550" alt="Shiba Inu Keychain" />
-        <h3>Shiba Inu T-Shirt 5</h3>
+        <img src="img\other\Shiba-merch-5.jpg" width="450" height="550" alt="Shiba Inu Mouse Pad" />
+        <h3>Shiba Inu Mouse Pad</h3>
         <p>$7.99</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
       </div>
       <div class="catalog-item">
-        <img src="img\other\Shiba-merch-6.jpg" width="450" height="550" alt="Shiba Inu Sticker" />
-        <h3>Shiba Inu T-Shirt 6</h3>
-        <p>$3.99</p>
+        <img src="img\other\Shiba-merch-6.jpg" width="450" height="550" alt="Shiba Inu Earbud Case" />
+        <h3>Shiba Inu Earbud Case</h3>
+        <p>$19.99</p>
+        <button class="add-to-cart-btn">Add to Cart</button>
       </div>
     </div>
   );

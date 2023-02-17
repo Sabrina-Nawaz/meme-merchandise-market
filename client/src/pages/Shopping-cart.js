@@ -1,8 +1,10 @@
 import React from "react";
 import "../style/Shopping-cart.css";
-import "../script/Shopping-cart.js";
+// import "../script/Cart-script.js";
 
 const ShoppingCart = () => {
+  //JS goes in here
+
   return (
     <body>
       <div class="shopping-cart-container">
