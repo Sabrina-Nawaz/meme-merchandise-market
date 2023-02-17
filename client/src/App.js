@@ -12,8 +12,8 @@ import Shirts from "./pages/Shirts";
 import Sweatshirts from "./pages/Sweatshirts";
 import Hats from "./pages/Hats";
 import Others from "./pages/Others";
-import ShoppingCart from "./pages/Shopping-cart";
-import Contact from './pages/contact';
+import ShoppingCart from "./pages/ShoppingCart";
+import Contact from "./pages/contact";
 
 function App() {
   return (
@@ -21,22 +21,10 @@ function App() {
       <>
         <Header />
         <Routes>
-          <Route 
-            path='/shipping' 
-            element={<Shipping />} 
-          />
-          <Route 
-            path='/refund' 
-            element={<Refund />} 
-          />
-          <Route 
-            path='/privacy' 
-            element={<Privacy />} 
-          />
-                    <Route 
-            path='/contact' 
-            element={<Contact />} 
-          />
+          <Route path="/shipping" element={<Shipping />} />
+          <Route path="/refund" element={<Refund />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/" element={<Home />} />
           <Route path="/shipping" element={<Shipping />} />
           <Route path="/refund" element={<Refund />} />
@@ -45,7 +33,7 @@ function App() {
           <Route path="/Sweatshirts" element={<Sweatshirts />} />
           <Route path="/Hats" element={<Hats />} />
           <Route path="/Others" element={<Others />} />
-          <Route path="/ShoppingCart" element={<ShoppingCart />} />
+          <Route path="/Cart" element={<ShoppingCart />} />
           <Route path="*" element={<h1 className="display-2">Wrong page!</h1>} />
         </Routes>
         <Footer />
