@@ -39,6 +39,8 @@ const Header = () => {
           ):(
           <button class="navbar-login-btn" onClick={() => setShowModal(true)}>Login</button>
           )}
+        </nav>
+      </body>
 
         {/* Category Bar Section */}
         <nav class="categorybar">
