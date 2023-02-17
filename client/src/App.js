@@ -12,7 +12,7 @@ import Shirts from "./pages/Shirts";
 import Sweatshirts from "./pages/Sweatshirts";
 import Hats from "./pages/Hats";
 import Others from "./pages/Others";
-import ShoppingCart from "./pages/Shopping-cart";
+import ShoppingCart from "./pages/ShoppingCart";
 import Contact from "./pages/contact";
 
 function App() {
