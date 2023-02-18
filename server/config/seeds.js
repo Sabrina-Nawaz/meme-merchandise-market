@@ -20,7 +20,7 @@ db.once("open", async () => {
     {
       productName: "Shiba Inu T-shirt 1",
       description: "Shiba Inu Eating Udon",
-      image: "shirt1.jpg",
+      image: "shirt-1.jpg",
       price: 34.99,
       category: categories[0].categoryName,
       //   quantity: 500,
@@ -28,7 +28,7 @@ db.once("open", async () => {
     {
       productName: "Shiba Inu T-shirt 2",
       description: "Shiba Inu Training",
-      image: "shirt2.jpg",
+      image: "shirt-2.jpg",
       price: 19.99,
       category: categories[0].categoryName,
       //   quantity: 500,
@@ -36,7 +36,7 @@ db.once("open", async () => {
     {
       productName: "Shiba Inu T-shirt 3E",
       description: "Shiba Silhouette",
-      image: "shirt3.jpg",
+      image: "shirt-3.jpg",
       price: 14.99,
       category: categories[0].categoryName,
       //   quantity: 20,
@@ -44,7 +44,7 @@ db.once("open", async () => {
     {
       productName: "Shiba Inu T-shirt 4",
       description: "Shiba Inu Silhouette TieDye",
-      image: "shirt4.jpg",
+      image: "shirt-4.jpg",
       price: 12.99,
       //   quantity: 50,
       category: categories[0].categoryName,
@@ -52,7 +52,7 @@ db.once("open", async () => {
     {
       productName: "Shiba Inu T-shirt 5",
       description: "Shiba Inu Hiragana Eating Udon",
-      image: "shirt5.jpg",
+      image: "shirt-5.jpg",
       price: 7.99,
       //   quantity: 100,
       category: categories[0].categoryName,
@@ -60,7 +60,7 @@ db.once("open", async () => {
     {
       productName: "Shiba Inu T-shirt 6",
       description: "Shiba Inu Sports",
-      image: "shirt6.jpg",
+      image: "shirt-6.jpg",
       price: 7.99,
       //   quantity: 30,
       category: categories[0].categoryName,
@@ -70,7 +70,7 @@ db.once("open", async () => {
     {
       productName: "Shiba Inu Sweatshirt 1",
       description: "Shiba Inu Silohuette Heart",
-      image: "sweatshirt1.jpg",
+      image: "Sweatshirts-1.jpg",
       price: 34.99,
       //   quantity: 30,
       category: categories[1].categoryName,
@@ -78,7 +78,7 @@ db.once("open", async () => {
     {
       productName: "Shiba Inu Sweatshirt 2",
       description: "Shiba Inu Sports Nine",
-      image: "sweatshirt2.jpg",
+      image: "Sweatshirts-2.jpg",
       price: 19.99,
       //   quantity: 30,
       category: categories[1].categoryName,
@@ -86,7 +86,7 @@ db.once("open", async () => {
     {
       productName: "Shiba Inu Sweatshirt 3",
       description: "Shiba Inu & Girls",
-      image: "sweatshirt3.jpg",
+      image: "Sweatshirts-3.jpg",
       price: 14.99,
       //   quantity: 30,
       category: categories[1].categoryName,
@@ -94,7 +94,7 @@ db.once("open", async () => {
     {
       productName: "Shiba Inu Sweatshirt 4",
       description: "Shiba Inu I Was Normal",
-      image: "sweatshirt4.jpg",
+      image: "Sweatshirts-4.jpg",
       price: 12.99,
       //   quantity: 30,
       category: categories[1].categoryName,
@@ -102,7 +102,7 @@ db.once("open", async () => {
     {
       productName: "Shiba Inu Sweatshirt 5",
       description: "Shiba Inu Tricolour Friends",
-      image: "sweatshirt5.jpg",
+      image: "Sweatshirts-5.jpg",
       price: 7.99,
       //   quantity: 30,
       category: categories[1].categoryName,
@@ -110,17 +110,17 @@ db.once("open", async () => {
     {
       productName: "Shiba Inu Sweatshirt 6",
       description: "Shiba Inu I Was Normal Purple",
-      image: "sweatshirt6.jpg",
+      image: "Sweatshirts-6.jpg",
       price: 7.99,
       //   quantity: 30,
       category: categories[1].categoryName,
     },
 
-    //Category 2
+    //Category 2 - Hats
     {
       productName: "Shiba Inu Hat 1",
       description: "Shiba Inu Nine Emoji Baseball Cap",
-      image: "hat1.jpg",
+      image: "Hat-1.jpg",
       price: 34.99,
       //   quantity: 30,
       category: categories[2].categoryName,
@@ -128,7 +128,7 @@ db.once("open", async () => {
     {
       productName: "Shiba Inu Hat 2",
       description: "Shiba Inu Artistic Bucket Hat",
-      image: "hat2.jpg",
+      image: "Hat-2.jpg",
       price: 19.99,
       //   quantity: 30,
       category: categories[2].categoryName,
@@ -137,7 +137,7 @@ db.once("open", async () => {
     {
       productName: "Shiba Inu Hat 3E",
       description: "Shiba Inu Mom Baseball Cap",
-      image: "hat3.jpg",
+      image: "Hat-3.jpg",
       price: 14.99,
       //   quantity: 30,
       category: categories[2].categoryName,
@@ -145,7 +145,7 @@ db.once("open", async () => {
     {
       productName: "Shiba Inu Hat 4",
       description: "Shiba Inu Sleeping Trucker Hat",
-      image: "hat4.jpg",
+      image: "Hat-4.jpg",
       price: 12.99,
       //   quantity: 30,
       category: categories[2].categoryName,
@@ -153,7 +153,7 @@ db.once("open", async () => {
     {
       productName: "Shiba Inu Hat 5",
       description: "Shiba Inu Biker Trucker Hat",
-      image: "hat5.jpg",
+      image: "Hat-5.jpg",
       price: 7.99,
       //   quantity: 30,
       category: categories[2].categoryName,
@@ -161,7 +161,7 @@ db.once("open", async () => {
     {
       productName: "Shiba Inu Hat 6",
       description: "Shiba Inu Marmalade Bucket Hat",
-      image: "hat6.jpg",
+      image: "Hat-6.jpg",
       price: 7.99,
       //   quantity: 30,
       category: categories[2].categoryName,
@@ -169,25 +169,25 @@ db.once("open", async () => {
 
     //Category 3: Others
     {
-      productName: "Shiba Inu T-shirt 1 / Mug Set",
+      productName: "Shiba Inu Mug Set",
       description: "Shiba Inu Mug Set",
-      image: "mug.jpg",
+      image: "Shiba-merch-1.jpg",
       price: 34.99,
       //   quantity: 30,
-      category: categories[2].categoryName,
+      category: categories[3].categoryName,
     },
     {
-      productName: "Shiba Inu T-shirt 2 / Key-ring",
+      productName: "Shiba Inu Key-ring",
       description: "Shiba Inu Rich Key-ring",
-      image: "keyring.jpg",
+      image: "Shiba-merch-2.jpg",
       price: 19.99,
       //   quantity: 30,
-      category: categories[2].categoryName,
+      category: categories[3].categoryName,
     },
     {
-      productName: "Shiba Inu T-Shirt 4 / Slippers",
+      productName: "Shiba Inu Slippers",
       description: "Shiba Inu Slippers",
-      image: "slippers.jpg",
+      image: "Shiba-merch-3.jpg",
       price: 12.99,
       //   quantity: 30,
       category: categories[3].categoryName,
@@ -195,24 +195,24 @@ db.once("open", async () => {
     {
       productName: "Shiba Inu Plush3E",
       description: "Shiba Inu Plush Sleeping",
-      image: "plush.jpg",
+      image: "Shiba-merch-4.jpg",
       price: 14.99,
       //   quantity: 30,
       category: categories[3].categoryName,
     },
     {
-      productName: "Shiba Inu T-shirt 5 / Case",
+      productName: "Shiba Inu Case",
       description: "Shiba Inu Black Case",
-      image: "case.jpg",
+      image: "Shiba-merch-5.jpg",
       price: 7.99,
       //   quantity: 30,
       category: categories[3].categoryName,
     },
 
     {
-      productName: "Shiba Inu T-shirt 6 / AirPod Case",
+      productName: "Shiba Inu AirPod Case",
       description: "Shiba Inu AirPod Case",
-      image: "airpodcase.jpg",
+      image: "Shiba-merch-6.jpg",
       price: 3.99,
       //   quantity: 30,
       category: categories[3].categoryName,
