@@ -13,7 +13,7 @@ const productController = {
   },
   // To GET ONE product by id
   getOneProduct(req, res) {
-    Product.findOne({ _id: req.params.productId})
+    Product.findOne({ _id: req.params.productId })
       .then((product) =>
         !product
           ? res.status(404).json({ message: "No product with that ID" })
@@ -37,6 +37,13 @@ const productController = {
       { runValidators: true, new: true }
     )
       .then((user) => res.json(user))
+      .catch((err) => res.status(500).json(err));
+  },
+
+  // To delete product
+  deleteProduct(req, res) {
+    Product.findOneAndDelete({ _id: req.params.productId })
+      .then((user) => res.json(user)) //
       .catch((err) => res.status(500).json(err));
   },
 };
