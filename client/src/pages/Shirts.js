@@ -56,14 +56,44 @@ const Home = () => {
   //   fetchData();
   // }, []);
 
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await fetch(`/api/products`, {
+          method: "GET",
+        });
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        const data = await response.json();
+        setData(data);
+      } catch (error) {
+        console.error("Error fetching posts:", error);
+      }
+    }
+    fetchData();
+  }, []);
+
   return (
     <div class="catalog">
-      <div class="catalog-item">
-        <img src="img\shirts\shirt-1.jpg" alt="Shiba Inu T-Shirt" />
-        <h3>Shiba Inu T-Shirt 1</h3>
-        <p>$29.99</p>
-        <button class="add-to-cart-btn">Add to Cart</button>
-      </div>
+      {data.map((product) => (
+        <div key={product._id} class="catalog-item">
+          {product.category === "Shirts" ? (
+            <img src={`img/shirts/${product.image}`} width="400" height="500" alt="Shiba Inu T- Shirt" />
+          ) : (
+            <spam></spam>
+          )}
+          {product.category === "Shirts" ? <h3>{product.description}</h3> : <spam></spam>}
+          {product.category === "Shirts" ? <p>${product.price}</p> : <spam></spam>}
+          {product.category === "Shirts" ? (
+            <button class="add-to-cart-btn">Add to Cart</button>
+          ) : (
+            <spam></spam>
+          )}
+        </div>
+      ))}
     </div>
   );
 };

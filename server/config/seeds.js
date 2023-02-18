@@ -70,7 +70,7 @@ db.once("open", async () => {
     {
       productName: "Shiba Inu Sweatshirt 1",
       description: "Shiba Inu Silohuette Heart",
-      image: "Sweatshirts-1.jpg",
+      image: "Sweatshirt-1.jpg",
       price: 34.99,
       //   quantity: 30,
       category: categories[1].categoryName,
@@ -78,7 +78,7 @@ db.once("open", async () => {
     {
       productName: "Shiba Inu Sweatshirt 2",
       description: "Shiba Inu Sports Nine",
-      image: "Sweatshirts-2.jpg",
+      image: "Sweatshirt-2.jpg",
       price: 19.99,
       //   quantity: 30,
       category: categories[1].categoryName,
@@ -86,7 +86,7 @@ db.once("open", async () => {
     {
       productName: "Shiba Inu Sweatshirt 3",
       description: "Shiba Inu & Girls",
-      image: "Sweatshirts-3.jpg",
+      image: "Sweatshirt-3.jpg",
       price: 14.99,
       //   quantity: 30,
       category: categories[1].categoryName,
@@ -94,7 +94,7 @@ db.once("open", async () => {
     {
       productName: "Shiba Inu Sweatshirt 4",
       description: "Shiba Inu I Was Normal",
-      image: "Sweatshirts-4.jpg",
+      image: "Sweatshirt-4.jpg",
       price: 12.99,
       //   quantity: 30,
       category: categories[1].categoryName,
@@ -102,7 +102,7 @@ db.once("open", async () => {
     {
       productName: "Shiba Inu Sweatshirt 5",
       description: "Shiba Inu Tricolour Friends",
-      image: "Sweatshirts-5.jpg",
+      image: "Sweatshirt-5.jpg",
       price: 7.99,
       //   quantity: 30,
       category: categories[1].categoryName,
@@ -110,7 +110,7 @@ db.once("open", async () => {
     {
       productName: "Shiba Inu Sweatshirt 6",
       description: "Shiba Inu I Was Normal Purple",
-      image: "Sweatshirts-6.jpg",
+      image: "Sweatshirt-6.jpg",
       price: 7.99,
       //   quantity: 30,
       category: categories[1].categoryName,

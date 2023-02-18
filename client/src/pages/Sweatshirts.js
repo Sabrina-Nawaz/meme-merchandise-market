@@ -27,7 +27,12 @@ const Home = () => {
       {data.map((product) => (
         <div key={product._id} class="catalog-item">
           {product.category === "Sweatshirts" ? (
-            <img src={`img/sweatshirts/${product.image}`} alt="Shiba Inu Sweatshirts" />
+            <img
+              src={`img/sweatshirts/${product.image}`}
+              width="400"
+              height="500"
+              alt="Shiba Inu Sweatshirts"
+            />
           ) : (
             <spam></spam>
           )}

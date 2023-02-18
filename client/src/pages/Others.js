@@ -1,45 +1,44 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../style/Others.css";
 
 const Home = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await fetch(`/api/products`, {
+          method: "GET",
+        });
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        const data = await response.json();
+        setData(data);
+      } catch (error) {
+        console.error("Error fetching posts:", error);
+      }
+    }
+    fetchData();
+  }, []);
   return (
     <div class="catalog">
-      <div class="catalog-item">
-        <img src="img\other\Shiba-merch-1.jpg" width="450" height="550" alt="Shiba Inu Mug" />
-        <h3>Shiba Inu Mug</h3>
-        <p>$14.99</p>
-        <button class="add-to-cart-btn">Add to Cart</button>
-      </div>
-      <div class="catalog-item">
-        <img src="img\other\Shiba-merch-2.jpg" width="450" height="550" alt="Shiba Inu Key Chain" />
-        <h3>Shiba Inu Key Chain</h3>
-        <p>$9.99</p>
-        <button class="add-to-cart-btn">Add to Cart</button>
-      </div>
-      <div class="catalog-item">
-        <img src="img\other\Shiba-merch-3.jpg" width="450" height="550" alt="Shiba Inu Toy" />
-        <h3>Shiba Inu Toy</h3>
-        <p>$14.99</p>
-        <button class="add-to-cart-btn">Add to Cart</button>
-      </div>
-      <div class="catalog-item">
-        <img src="img\other\Shiba-merch-4.jpg" width="450" height="550" alt="Shiba Inu Slippers" />
-        <h3>Shiba Inu Slippers</h3>
-        <p>$12.99</p>
-        <button class="add-to-cart-btn">Add to Cart</button>
-      </div>
-      <div class="catalog-item">
-        <img src="img\other\Shiba-merch-5.jpg" width="450" height="550" alt="Shiba Inu Mouse Pad" />
-        <h3>Shiba Inu Mouse Pad</h3>
-        <p>$7.99</p>
-        <button class="add-to-cart-btn">Add to Cart</button>
-      </div>
-      <div class="catalog-item">
-        <img src="img\other\Shiba-merch-6.jpg" width="450" height="550" alt="Shiba Inu Earbud Case" />
-        <h3>Shiba Inu Earbud Case</h3>
-        <p>$19.99</p>
-        <button class="add-to-cart-btn">Add to Cart</button>
-      </div>
+      {data.map((product) => (
+        <div key={product._id} class="catalog-item">
+          {product.category === "Others" ? (
+            <img src={`img/other/${product.image}`} width="400" height="500" alt="Shiba Inu Merchandise" />
+          ) : (
+            <spam></spam>
+          )}
+          {product.category === "Others" ? <h3>{product.description}</h3> : <spam></spam>}
+          {product.category === "Others" ? <p>${product.price}</p> : <spam></spam>}
+          {product.category === "Others" ? (
+            <button class="add-to-cart-btn">Add to Cart</button>
+          ) : (
+            <spam></spam>
+          )}
+        </div>
+      ))}
     </div>
   );
 };
