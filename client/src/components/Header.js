@@ -32,7 +32,7 @@ const Header = () => {
                     Logout
                   </button>
                 </a>
-                <a href="/ShoppingCart">
+                <a href="/Cart">
                   <button class="navbar-cart-btn">
                     <FaCartArrowDown size="25px" color="white" />
                   </button>
