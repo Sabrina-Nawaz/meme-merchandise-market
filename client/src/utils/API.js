@@ -55,3 +55,24 @@ export const deleteBook = (bookId, token) => {
 export const searchGoogleBooks = (query) => {
   return fetch(`https://www.googleapis.com/books/v1/volumes?q=${query}`);
 };
+
+
+// remove saved book data for a logged in user
+// export const findAllShirt = async () => {
+//   return fetch(`/api/products`, {
+//     method: 'GET'
+//     }
+//   ).then(function (response) {
+//     return response.json();
+//   });
+  
+// };
+
+
+export const findAllShirt = async () => 
+   await fetch(`/api/products`, {
+    method: 'GET'
+  })    
+  .then((res) => res.json())
+  .then((data) => console.log(data));
+    

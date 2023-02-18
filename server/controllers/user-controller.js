@@ -1,8 +1,10 @@
 // Require the User model
 const { User } = require("../models");
+// import sign token function from auth
+const { signToken } = require('../utils/auth');
 
 const userController = {
-  // To get a SINGLE user by ID
+    // To get a SINGLE user by ID
   getOneUser({ params }, res) {
     User.findOne({ _id: params.id })
       .populate("products")
@@ -28,6 +30,24 @@ const userController = {
         return res.status(500).json(err);
       });
   },
+
+  // login a user, sign a token, and send it back (to client/src/components/LoginForm.js)
+  // {body} is destructured req.body
+  async login({ body }, res) {
+    const user = await User.findOne({ $or: [{ username: body.username }, { email: body.email }] });
+    if (!user) {
+      return res.status(400).json({ message: "Can't find this user" });
+    }
+
+    const correctPw = await user.isCorrectPassword(body.password);
+
+    if (!correctPw) {
+      return res.status(400).json({ message: 'Wrong password!' });
+    }
+    const token = signToken(user);
+    res.json({ token, user });
+  },
+
   //Update a user
   updateUser(req, res) {
     console.log(req.params);

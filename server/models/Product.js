@@ -23,9 +23,14 @@ const productSchema = new Schema(
     price: {
       type: String,
     },
-    // category: [Category],
+    category: {
+      type: String,
+      ref: 'Category',
+      required: true,
+    },
   },
   {
+    //confirm - the State Activity does not have toJSON
     toJSON: {
       virtuals: true,
     },

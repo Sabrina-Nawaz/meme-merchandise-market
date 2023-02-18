@@ -12,37 +12,35 @@ const Header = () => {
   const [showModal, setShowModal] = useState(false);
   return (
     <>
-      <header>
-        {/* Navbar Section */}
-        <body>
-          <nav class="navbar">
-            <div class="navbar-img-container navbar-img-container-left">
-              <img class="navbar-img" src="img\shiba-inu-icon.png" alt="Icon of a Shiba Inu" />
-            </div>
-            <a class="navbar-title" href="/">
-              Shiba Inu Meme Merchandise Store
-            </a>
-            <div class="navbar-img-container navbar-img-container-right">
-              <img class="navbar-img" src="img\shiba-inu-icon.png" alt="Banner of a cute Shiba Inu" />
-            </div>
-            {Auth.loggedIn() ? (
-              <>
-                <a href="/logout">
-                  <button class="navbar-login-btn">Logout</button>
-                </a>
-                <a href="/Cart">
-                  <button class="navbar-cart-btn">
-                    <FaCartArrowDown size="25px" color="white" />
-                  </button>
-                </a>
-              </>
-            ) : (
-              <button class="navbar-login-btn" onClick={() => setShowModal(true)}>
-                Login
-              </button>
-            )}
-          </nav>
-        </body>
+    <header>
+      {/* Navbar Section */}
+      <body>
+        <nav class="navbar">
+          <div class="navbar-img-container navbar-img-container-left">
+            <img class="navbar-img" src="img\shiba-inu-icon.png" alt="Icon of a Shiba Inu" />
+          </div>
+          <a class="navbar-title" href="/">
+            Shiba Inu Meme Merchandise Store
+          </a>
+          <div class="navbar-img-container navbar-img-container-right">
+            <img class="navbar-img" src="img\shiba-inu-icon.png" alt="Banner of a cute Shiba Inu" />
+          </div>
+          {Auth.loggedIn()? ( 
+            <>
+            <a href="/">
+            <button class="navbar-login-btn" onClick={Auth.logout}>Logout</button>
+            </a>        
+          <a href="/ShoppingCart">
+            <button class="navbar-cart-btn">
+              <FaCartArrowDown size="25px" color="white" />
+            </button>
+          </a>
+          </>
+          ):(
+          <button class="navbar-login-btn" onClick={() => setShowModal(true)}>Login</button>
+          )}
+        </nav>
+      </body>
 
         {/* Category Bar Section */}
         <nav class="categorybar">
