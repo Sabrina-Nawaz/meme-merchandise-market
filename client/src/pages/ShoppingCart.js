@@ -26,7 +26,9 @@ const ShoppingCart = () => {
               <h3>Item 1</h3>
               <p>$20.00</p>
               <div class="shopping-cart-item-quantity">
-                <label for="quantity">Quantity:</label>
+                <label for="quantity" class="shopping-cart-quantity-label">
+                  Quantity:
+                </label>
                 <p className="quantity"> 1</p>
               </div>
             </div>
