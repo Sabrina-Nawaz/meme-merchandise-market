@@ -4,57 +4,57 @@ import "../style/Shirts.css";
 import Auth from "../utils/auth";
 
 const Home = () => {
-  //Creating State
-  const [searchedBooks, setSearchedBooks] = useState([]);
+  // //Creating State
+  // const [searchedProduct, setSearchedProduct] = useState([]);
 
-  // create state to hold saved bookId values
-  const [savedBookIds, setSavedBookIds] = useState(getSavedBookIds());
+  // // create state to hold saved productId values
+  // const [savedProductIds, setSavedProductIds] = useState(getSavedProductIds());
 
-  // create function to handle saving a book to our database
-  const handleSaveBook = async (bookId) => {
-    // find the book in `searchedBooks` state by the matching id
-    const bookToSave = searchedBooks.find((book) => book.bookId === bookId);
+  // // create function to handle saving a product to our database
+  // const handleSaveProduct = async (productId) => {
+  //   // find the product in `searchedProducts` state by the matching id
+  //   const productToSave = searchedProducts.find((product) => product.productId === productId);
 
-    // get token
-    const token = Auth.loggedIn() ? Auth.getToken() : null;
+  //   // get token
+  //   const token = Auth.loggedIn() ? Auth.getToken() : null;
 
-    if (!token) {
-      return false;
-    }
+  //   if (!token) {
+  //     return false;
+  //   }
 
-    try {
-      const response = await saveBook(bookToSave, token);
+  //   try {
+  //     // const response = await saveProduct(productToSave, token);
 
-      if (!response.ok) {
-        throw new Error("something went wrong!");
-      }
+  //     if (!response.ok) {
+  //       throw new Error("something went wrong!");
+  //     }
 
-      // if book successfully saves to user's account, save book id to state
-      setSavedBookIds([...savedBookIds, bookToSave.bookId]);
-    } catch (err) {
-      console.error(err);
-    }
-  };
+  //     // if product successfully saves to user's account, save product id to state
+  //     setSavedProductIds([...savedProductIds, productToSave.productId]);
+  //   } catch (err) {
+  //     console.error(err);
+  //   }
+  // };
 
-  const [data, setData] = useState([]);
+  // const [data, setData] = useState([]);
 
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        const response = await fetch(`/api/products`, {
-          method: "GET",
-        });
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        const data = await response.json();
-        setData(data);
-      } catch (error) {
-        console.error("Error fetching posts:", error);
-      }
-    }
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     try {
+  //       const response = await fetch(`/api/products`, {
+  //         method: "GET",
+  //       });
+  //       if (!response.ok) {
+  //         throw new Error("Network response was not ok");
+  //       }
+  //       const data = await response.json();
+  //       setData(data);
+  //     } catch (error) {
+  //       console.error("Error fetching posts:", error);
+  //     }
+  //   }
+  //   fetchData();
+  // }, []);
 
   return (
     <div class="catalog">
