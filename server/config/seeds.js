@@ -217,6 +217,15 @@ db.once("open", async () => {
       //   quantity: 30,
       category: categories[3].categoryName,
     },
+    // test product for shopping cart
+    {
+      productName: "Test delete",
+      description: "Test delete",
+      image: "Shiba-merch-6.jpg",
+      price: 3.99,
+      //   quantity: 30,
+      category: categories[3].categoryName,
+    },
   ]);
 
   console.log("products seeded");
