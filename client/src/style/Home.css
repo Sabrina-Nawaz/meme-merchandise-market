@@ -26,3 +26,94 @@
   font-size: 24px;
   color: goldenrod;
 }
+
+/* Banner Section */
+.banner {
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-text {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 50px;
+  text-align: center;
+  backdrop-filter: blur(20%);
+}
+
+.banner h1 {
+  font-size: 48px;
+  color: goldenrod;
+  margin-bottom: 20px;
+  text-shadow: 3px 3px rgb(102, 77, 15);
+}
+
+.banner p {
+  font-size: 24px;
+  color: goldenrod;
+}
+
+/* Media Queries */
+/* Mobile devices */
+@media only screen and (max-width: 768px) {
+  .banner {
+    height: 300px;
+  }
+
+  .banner-text {
+    padding: 20px;
+  }
+
+  .banner h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .banner p {
+    font-size: 18px;
+  }
+}
+
+/* Tablets */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .banner {
+    height: 400px;
+  }
+
+  .banner-text {
+    padding: 30px;
+  }
+
+  .banner h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+
+  .banner p {
+    font-size: 20px;
+  }
+}
+
+/* Desktops */
+@media only screen and (min-width: 1025px) {
+  .banner {
+    height: 500px;
+  }
+
+  .banner-text {
+    padding: 50px;
+  }
+
+  .banner h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+
+  .banner p {
+    font-size: 24px;
+  }
+}

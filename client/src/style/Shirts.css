@@ -46,3 +46,15 @@
   background-color: goldenrod;
   color: white;
 }
+
+@media screen and (max-width: 768px) {
+  .catalog-item {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .catalog-item {
+    width: 100%;
+  }
+}
