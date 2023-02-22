@@ -5,11 +5,20 @@ import { FaCartArrowDown } from "react-icons/fa";
 import "../style/Header.css";
 import SignUpForm from "./SignupForm";
 import LoginForm from "./LoginForm";
+import { useNavigate } from 'react-router-dom';
 
 import Auth from "../utils/auth";
 
 const Header = () => {
   const [showModal, setShowModal] = useState(false);
+  const [query, setQuery] = useState('');
+  const history = useNavigate();
+
+  const handleSubmit = event => {
+    event.preventDefault();
+    history(`/${query.toLowerCase()}`);
+  };
+
   return (
     <>
       <header>
@@ -63,8 +72,8 @@ const Header = () => {
             </a>
           </div>
           <div class="categorybar-search-container">
-            <form action="#">
-              <input type="text" placeholder="Search..." class="categorybar-search-input" />
+            <form onSubmit={handleSubmit}>
+              <input type="text" placeholder="Search..." value={query} onChange={event => setQuery(event.target.value)} class="categorybar-search-input" />
               <button type="submit" class="categorybar-search-btn">
                 <i class="fa fa-search"></i>
               </button>
