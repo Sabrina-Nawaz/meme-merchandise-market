@@ -2,6 +2,12 @@ import React, { useEffect } from "react";
 import "../style/ShoppingCart.css";
 
 const ShoppingCart = () => {
+
+
+
+
+
+  
   useEffect(() => {
     //Function to remove item
     const removeButton = document.querySelector(".remove-button");

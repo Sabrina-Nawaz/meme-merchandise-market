@@ -1,10 +1,10 @@
 // Require the User model
 const { User } = require("../models");
 // import sign token function from auth
-const { signToken } = require('../utils/auth');
+const { signToken } = require("../utils/auth");
 
 const userController = {
-    // To get a SINGLE user by ID
+  // To get a SINGLE user by ID
   getOneUser({ params }, res) {
     User.findOne({ _id: params.id })
       .populate("products")
@@ -42,7 +42,7 @@ const userController = {
     const correctPw = await user.isCorrectPassword(body.password);
 
     if (!correctPw) {
-      return res.status(400).json({ message: 'Wrong password!' });
+      return res.status(400).json({ message: "Wrong password!" });
     }
     const token = signToken(user);
     res.json({ token, user });
@@ -51,15 +51,9 @@ const userController = {
   //Update a user
   updateUser(req, res) {
     console.log(req.params);
-    User.findOneAndUpdate(
-      { _id: req.params.id },
-      { $set: req.body },
-      { runValidators: true, new: true }
-    )
+    User.findOneAndUpdate({ _id: req.params.id }, { $set: req.body }, { runValidators: true, new: true })
       .then((dbUserData) =>
-        !dbUserData
-          ? res.status(404).json({ message: "No user with this id!" })
-          : res.json(dbUserData)
+        !dbUserData ? res.status(404).json({ message: "No user with this id!" }) : res.json(dbUserData)
       )
       .catch((err) => res.status(500).json(err));
   },
@@ -97,11 +91,27 @@ const userController = {
       { new: true }
     );
     if (!updatedUser) {
-      return res
-        .status(404)
-        .json({ message: "Couldn't find user with this id!" });
+      return res.status(404).json({ message: "Couldn't find user with this id!" });
     }
     return res.json(updatedUser);
+  },
+
+  //TEST
+  // save a book to a user's `savedBooks` field by adding it to the set (to prevent duplicates)
+  // user comes from `req.user` created in the auth middleware function
+  async saveProduct({ user, body }, res) {
+    console.log(user);
+    try {
+      const updatedUser = await User.findOneAndUpdate(
+        { _id: user._id },
+        { $addToSet: { savedProducts: body } },
+        { new: true, runValidators: true }
+      );
+      return res.json(updatedUser);
+    } catch (err) {
+      console.log(err);
+      return res.status(400).json(err);
+    }
   },
 };
 
