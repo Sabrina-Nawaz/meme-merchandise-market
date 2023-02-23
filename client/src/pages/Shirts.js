@@ -70,7 +70,6 @@ const Home = () => {
           )}
           {product.category === "Shirts" ? <h3>{product.description}</h3> : <spam></spam>}
           {product.category === "Shirts" ? <p>${product.price}</p> : <spam></spam>}
-
           {Auth.loggedIn() && (
             <Button
               disabled={savedProductIds?.some((savedProductId) => savedProductId === product._id)}
