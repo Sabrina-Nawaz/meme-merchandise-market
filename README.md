@@ -10,52 +10,68 @@
 </p>
 
 <div align="center">
+
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+
 </div>
-
-Link to deployed page: [TBD]
-
-Screenshots:
-
-## Description
-
-CustomFit is a web application created to fetch data from Third Party APIs to customize a work out plan for the user and retrieve their BMI based on the specific measurements entered and saved by local storage.
-
-## Purpose
-
-This web application was built based on a passion for fitness and health. Many people do not feel comfortable starting off with a personal trainer at a gym or they are at a loss as to what they should be doing based off their needs. CustomFit helps users find a work out plan and it informs them as to where their body mass fits in accordance with their measurements.
-
-## Education
-
-The project allowed us to learn how to retrieve information from Third Party APIs in order to utilize and combine the information received to deliver a product to users. It also taught us how to collaborate with one another in the group online and create a useful web application.
 
 # Table of Contents
 
-## Usage
+[Description](#description)
 
-## Resources
+[Purpose](#purpose)
 
-https://www.istockphoto.com/photo/athletic-young-woman-gm865815760-143829739?phrase=bodybuilder%20black%20and%20white%20power%20and%20strength
+[Education](#education)
 
-https://www.pictorem.com/214773/Bodybuilder%20in%20Black%20and%20White.html#fromHistory
+[Screenshots](#screenshots)
 
-https://unsplash.com/photos/20jX9b35r_M
+[Development Link](#development-link)
 
-https://htmlcolorcodes.com/
+[Developers](#developers)
 
-https://www.masterfile.com/search/en/black+and+white+track+and+field+photography
+## Description
 
-## Credits
+Our Shiba Inu Meme Merchandise is a web application created using the MERN stack. The front-end would be built with React and would allow users to browse products, add them to a shopping cart, and checkout. The back-end would be built using Node.js and Express and would handle user authentication, order processing, and data storage. To store product data, the back-end would use a MongoDB database. The front-end and back-end would communicate using a RESTful API. Overall, building an e-commerce website using the MERN stack would be a great way to showcase full-stack development skills, as it involves working with multiple technologies and building complex functionality.
+
+## Purpose
+
+As a student, building an e-commerce coding project also provides an opportunity to learn and practice full-stack development skills, such as front-end development with HTML, CSS, JavaScript and React framework, back-end development with a framework like Node.js and Express, and database management with MongoDB. It also involves building complex functionality, such as user authentication, data storage, and data retrieval, and integrating multiple technologies to create a seamless user experience.
+
+Overall, the purpose of an e-commerce coding project is to provide a practical and challenging project for us to showcase our coding skills, while also creating a valuable product for businesses and customers alike.
+
+## Education
+
+This project allowed us to use the MERN stack to create an e-commerce web project, we have gained valuable skills in full-stack development, front-end and back-end development, database management, API design, and Heroku deployment. These skills are highly in demand in the tech industry and can prepare us for a successful career as a web developer.
+
+## Screenshots:
+
+#### Home
+
+<img src="https://user-images.githubusercontent.com/108771904/220981589-7726bfbc-a3d6-42d3-8bd3-f4c18b29ea22.jpg"  width="700" height="400">
+
+#### Merchandise
+
+<img src="https://user-images.githubusercontent.com/108771904/220981594-d93f8dfd-cbbb-447a-87a7-63d70c64192e.jpg"  width="700" height="400">
+
+#### Shopping Cart
+
+<img src="https://user-images.githubusercontent.com/108771904/220982752-cf547933-9a7a-498f-b2cc-45214169d09e.jpg"  width="700" height="400">
+
+### Development Link: [TBD]
+
+## Developers
 
 Jeff Zhang: https://github.com/bleachevil
 
 Connie Wong: https://github.com/conniehhw
 
-Gareth Kwan: https://github.com/Gareth0201
+Serhiy Zvedenyuk: https://github.com/SerhiyZv
 
 Sabrina Nawaz: https://github.com/Sabrina-Nawaz
+
+Gareth Kwan: https://github.com/Gareth-Kwan
