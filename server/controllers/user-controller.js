@@ -5,20 +5,16 @@ const { signToken } = require("../utils/auth");
 
 const userController = {
   // To get a SINGLE user by ID
-  getOneUser({ params }, res) {
-    User.findOne({ _id: params.id })
-      .populate("products")
-      .then((dbUserData) => {
-        if (!dbUserData) {
-          res.status(404).json({ message: "Cannot find user with this id!" });
-          return;
-        }
-        res.json(dbUserData);
-      })
-      .catch((err) => {
-        console.log(err);
-        res.sendStatus(400);
-      });
+  async getOneUser({ user = null, params }, res) {
+    const foundUser = await User.findOne({
+      $or: [{ _id: user ? user._id : params.id }, { username: params.username }],
+    });
+
+    if (!foundUser) {
+      return res.status(400).json({ message: 'Cannot find a user with this id!' });
+    }
+
+    res.json(foundUser);
   },
   // Create a user
   createUser(req, res) {

@@ -1,8 +1,9 @@
-const { Schema, model } = require("mongoose");
+const { Schema, model } = require('mongoose');
 const bcrypt = require("bcrypt");
 
 // import schema from Book.js/ Product.js
-const productSchema = require("./Product");
+const Product = require("./Product");
+
 
 const userSchema = new Schema(
   {
@@ -22,7 +23,7 @@ const userSchema = new Schema(
       required: true,
     },
     // set savedBooks/Products to be an array of data that adheres to the book/productSchema
-    savedProducts: [productSchema], //We uncommented this
+    savedProducts: [Product.schema], //We uncommented this
   },
   // set this to use virtual below
   {

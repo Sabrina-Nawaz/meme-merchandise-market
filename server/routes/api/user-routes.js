@@ -6,7 +6,7 @@ const {
   login,
   // updateUser,
   //savedProducts, // is this same as addProduct? or is it total savedProducts?
-  // addProduct, //not needed?
+  addProduct, //not needed?
   deleteProduct,
 } = require("../../controllers/user-controller");
 
@@ -14,7 +14,7 @@ const {
 const { authMiddleware } = require("../../utils/auth");
 
 // Route to GET and POST all users /api/users
-router.route("/").post(createUser);
+router.route("/").post(createUser).put(authMiddleware, addProduct);
 
 // put authMiddleware anywhere we need to send a token for verification of user
 //router.route("/").post(createUser).put(authMiddleware, savedProducts);
