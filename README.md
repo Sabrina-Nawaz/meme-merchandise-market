@@ -62,7 +62,7 @@ This project allowed us to use the MERN stack to create an e-commerce web projec
 
 <img src="https://user-images.githubusercontent.com/108771904/220982752-cf547933-9a7a-498f-b2cc-45214169d09e.jpg"  width="700" height="400">
 
-### Development Link: [TBD]
+### Development Link: https://merchandise-shiba.herokuapp.com/
 
 ## Developers
 
