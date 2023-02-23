@@ -110,6 +110,8 @@
   color: #ffc107;
   background-color: white;
   font-weight: bold;
+  margin-left: 47%;
+  margin-right: 50%;
 }
 
 .shopping-cart-checkout button:hover {

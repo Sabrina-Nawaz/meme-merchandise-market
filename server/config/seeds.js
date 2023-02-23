@@ -34,7 +34,7 @@ db.once("open", async () => {
       //   quantity: 500,
     },
     {
-      productName: "Shiba Inu T-shirt 3E",
+      productName: "Shiba Inu T-shirt 3",
       description: "Shiba Silhouette",
       image: "shirt-3.jpg",
       price: 14.99,
