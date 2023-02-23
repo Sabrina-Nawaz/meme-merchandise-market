@@ -70,7 +70,7 @@ const Home = () => {
           )}
           {product.category === "Shirts" ? <h3>{product.description}</h3> : <spam></spam>}
           {product.category === "Shirts" ? <p>${product.price}</p> : <spam></spam>}
-          {Auth.loggedIn() && (
+          {Auth.loggedIn() && product.category === "Shirts" ? (
             <Button
               disabled={savedProductIds?.some((savedProductId) => savedProductId === product._id)}
               className="add-to-cart-btn"
@@ -79,6 +79,8 @@ const Home = () => {
                 ? "This Product has already been added to cart!"
                 : "Add to cart"}
             </Button>
+          ) : (
+            <spam></spam>
           )}
         </div>
       ))}
